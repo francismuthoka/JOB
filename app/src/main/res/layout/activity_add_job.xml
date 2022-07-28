@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/add_job_bg"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:backgroundTint="@color/black"
+    tools:context=".add_job">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90sp"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/pink_complement"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="add a job">
+        </TextView>
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:background="@color/pink"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:layout_gravity="center"
+                android:text="add job details">
+            </TextView>
+
+            <EditText
+                android:id="@+id/job_tittle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/edit_text"
+                android:gravity="center"
+                android:hint="job tittle"></EditText>
+
+            <EditText
+                android:id="@+id/job_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/edit_text"
+                android:gravity="center"
+                android:hint="job location(city/town)">
+
+            </EditText>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="salary"
+                android:gravity="center"
+                android:id="@+id/job_salary"
+                android:background="@drawable/edit_text"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_margin="10dp">
+            </EditText>
+
+            <EditText
+                android:id="@+id/job_vacancies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/edit_text"
+                android:gravity="center"
+                android:hint="total job vacancies"></EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="select last date of application"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:textColor="@color/black">
+            </TextView>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:text="select due date"
+                android:id="@+id/select_due_date"
+                android:focusable="false"
+                android:inputType="none">
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:layout_gravity="center"
+                android:text="add company details">
+            </TextView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="company name"
+                android:id="@+id/company_name"
+                android:gravity="center"
+                android:background="@drawable/edit_text"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_margin="10dp">
+            </EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="email address of the company"
+                android:gravity="center"
+                android:id="@+id/company_address"
+                android:background="@drawable/edit_text"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_margin="10dp">
+            </EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="postal address"
+                android:gravity="center"
+                android:id="@+id/company_postalAddress"
+                android:background="@drawable/edit_text"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_margin="10dp">
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:layout_gravity="center"
+                android:text="add company requirements">
+            </TextView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="enter the first qualification"
+                android:gravity="center"
+                android:id="@+id/first_qualification"
+                android:background="@drawable/edit_text"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_margin="10dp">
+            </EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="enter the next qualification"
+                android:gravity="center"
+                android:id="@+id/second_qualification"
+                android:background="@drawable/edit_text"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_margin="10dp">
+            </EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="enter the next qualification"
+                android:gravity="center"
+                android:id="@+id/third_qualification"
+                android:background="@drawable/edit_text"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_margin="10dp">
+            </EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="enter the next qualification"
+                android:gravity="center"
+                android:id="@+id/fourth_qualification"
+                android:background="@drawable/edit_text"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_margin="10dp">
+            </EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="enter the next qualification"
+                android:gravity="center"
+                android:id="@+id/fifth_qualification"
+                android:background="@drawable/edit_text"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_margin="10dp">
+            </EditText>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_bg"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="add job"
+                android:id="@+id/job_btn"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp">
+            </Button>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

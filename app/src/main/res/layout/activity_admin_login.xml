@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/admin_login_bg"
+    tools:context=".admin_login">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="welcome admin"
+        android:textAllCaps="true"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center">
+    </TextView>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_baseline_person_24" >
+    </ImageView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="80dp"
+        android:hint="admin username"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/admin_username"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/edit_text">
+
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/admin_password"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="40dp"
+        android:hint="admin password"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/edit_text">
+
+    </EditText>
+
+    <Button
+        android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/admin_login_btn"
+        android:text="login"
+        android:background="@drawable/button_bg">
+
+    </Button>
+
+</LinearLayout>
