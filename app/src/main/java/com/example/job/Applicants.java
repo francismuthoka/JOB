@@ -21,8 +21,8 @@ public class Applicants extends AppCompatActivity {
     ListView listView;
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
-    ArrayList<String> arrayList;
-    ArrayAdapter<String> arrayAdapter;
+    ArrayList<ListUser> arrayList;
+    ArrayAdapter<ListUser> arrayAdapter;
 
 
     @Override
@@ -31,7 +31,7 @@ public class Applicants extends AppCompatActivity {
         setContentView(R.layout.activity_applicants);
         listView=findViewById(R.id.listView);
         firebaseDatabase=FirebaseDatabase.getInstance();
-        arrayAdapter=new ArrayAdapter<String>(this,R.layout.applicants_item,R.id.first_name,arrayList);
+        arrayAdapter=new ArrayAdapter<ListUser>(this,R.layout.applicants_item,R.id.first_name,arrayList);
 
         Intent intent=getIntent();
         String job_name=intent.getStringExtra("");
@@ -44,7 +44,7 @@ public class Applicants extends AppCompatActivity {
                     PutPdf putPdf=dataSnapshot.getValue(PutPdf.class);
                     String tempjobname=putPdf.getJob_name().toString();
                     if (job_name.equals(tempjobname)){
-                            arrayList.add(putPdf.getApplicant_name().toString());
+                            arrayList.add(putPdf.getApplicant_name());
                     }
                     else {
 
